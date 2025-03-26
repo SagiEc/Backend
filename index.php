@@ -1,6 +1,6 @@
 <?php 
     require $_SERVER['DOCUMENT_ROOT'] . "/Backend/CONTROLLER/conexao.php";
-
+    require $_SERVER['DOCUMENT_ROOT'] . "/Backend/CONTROLLER/segurosDAO.php";
     $con = Conexao::Getconexao();
     
 ?>
