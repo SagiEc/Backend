@@ -1,6 +1,6 @@
 <?php 
     require $_SERVER['DOCUMENT_ROOT'] . "/Backend/CONTROLLER/conexao.php";
-    require $_SERVER['DOCUMENT_ROOT'] . "/Backend/CONTROLLER/segurosDAO.php";
+    require $_SERVER['DOCUMENT_ROOT'] . "/Backend/CONTROLLER/seguroDAO.php";
     $con = Conexao::Getconexao();
     
 ?>
@@ -45,6 +45,7 @@
                     <tr Class="Fundo_Tabela">
                     
                     <td class="_Editar_"><b>Editar</b></td>
+                    <td class="_Editar_"><b>id</b></td>
                     <td class="_Pessoa"><b>Pessoa</b></td>
                     <td class="_placa_veiculo_"><b>Placa Veículo</b></td>
                     <td class="_vigência"><b>Vigência</b></td>
@@ -56,6 +57,7 @@
                 <tr>
                     
                     <td class="_Editar_">Editar</td>
+                    <td class="_Editar_">id</td>
                     <td class="_Pessoa">Pessoa</td>
                     <td class="_placa_veiculo_">Placa Veículo</td>
                     <td class="_vigência">Vigência</td>
@@ -66,6 +68,7 @@
                 <tr Class="Fundo_Tabela">
                     
                     <td class="_Editar_">Editar</td>
+                    <td class="_Editar_">id</td>
                     <td class="_Pessoa">Pessoa</td>
                     <td class="_placa_veiculo_">Placa Veículo</td>
                     <td class="_vigência">Vigência</td>
@@ -76,6 +79,7 @@
                 <tr>
                     
                     <td class="_Editar_">Editar</td>
+                    <td class="_Editar_">id</td>
                     <td class="_Pessoa">Pessoa</td>
                     <td class="_placa_veiculo_">Placa Veículo</td>
                     <td class="_vigência">Vigência</td>
@@ -86,6 +90,7 @@
                 <tr Class="Fundo_Tabela">
                     
                     <td class="_Editar_">Editar</td>
+                    <td class="_Editar_">id</td>
                     <td class="_Pessoa">Pessoa</td>
                     <td class="_placa_veiculo_">Placa Veículo</td>
                     <td class="_vigência">Vigência</td>
@@ -96,6 +101,7 @@
                 <tr>
                     
                     <td class="_Editar_">Editar</td>
+                    <td class="_Editar_">id</td>
                     <td class="_Pessoa">Pessoa</td>
                     <td class="_placa_veiculo_">Placa Veículo</td>
                     <td class="_vigência">Vigência</td>
@@ -106,6 +112,7 @@
                 <tr Class="Fundo_Tabela">
                     
                     <td class="_Editar_">Editar</td>
+                    <td class="_Editar_">id</td>
                     <td class="_Pessoa">Pessoa</td>
                     <td class="_placa_veiculo_">Placa Veículo</td>
                     <td class="_vigência">Vigência</td>
@@ -116,6 +123,7 @@
                 <tr>
                     
                     <td class="_Editar_">Editar</td>
+                    <td class="_Editar_">id</td>
                     <td class="_Pessoa">Pessoa</td>
                     <td class="_placa_veiculo_">Placa Veículo</td>
                     <td class="_vigência">Vigência</td>
@@ -126,6 +134,7 @@
                 <tr Class="Fundo_Tabela">
                     
                     <td class="_Editar_">Editar</td>
+                    <td class="_Editar_">id</td>
                     <td class="_Pessoa">Pessoa</td>
                     <td class="_placa_veiculo_">Placa Veículo</td>
                     <td class="_vigência">Vigência</td>
