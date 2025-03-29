@@ -6,7 +6,7 @@
         public $nome;
         public $cpf;
         public $placaveiculo;
-        public $apólice;
+        public $apolice;
         public $proposta;
         public $vigencia;
         public $ativo;
@@ -16,17 +16,17 @@
                 $this -> id = $arraySeguros["ID"];
                 $this -> nome = $arraySeguros["NOME"];
                 $this -> cpf = $arraySeguros["CPF"];
-                $this -> placaveiculo = $arraySeguros["PLACAVEÍCULO"];
-                $this -> apólice = $arraySeguros["APÓLICE"];
+                $this -> placaveiculo = $arraySeguros["PLACAVEICULO"];
+                $this -> apolice = $arraySeguros["APOLICE"];
                 $this -> proposta = $arraySeguros["PROPOSTA"];
-                $this -> vigencia = $arraySeguros["VIGÊNCIA"];
+                $this -> vigencia = $arraySeguros["VIGENCIA"];
                 $this -> ativo = $arraySeguros["ATIVO"];
             } else { 
                 $this -> id = $arraySeguros[0];
                 $this -> nome = $arraySeguros[1];
                 $this -> cpf = $arraySeguros[2];
                 $this -> placaveiculo = $arraySeguros[3];
-                $this -> apólice = $arraySeguros[4];
+                $this -> apolice = $arraySeguros[4];
                 $this -> proposta = $arraySeguros[5];
                 $this -> vigencia = $arraySeguros[6];
                 $this -> ativo = $arraySeguros[7];

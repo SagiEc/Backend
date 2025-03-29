@@ -1,10 +1,11 @@
 <?php 
-    require $_SERVER['DOCUMENT_ROOT'] . "/Backend/CONTROLLER/conexao.php";
-    require $_SERVER['DOCUMENT_ROOT'] . "/Backend/CONTROLLER/seguroDAO.php";
+    require_once $_SERVER['DOCUMENT_ROOT'] . "/Backend/CONTROLLER/conexao.php";
+    require_once $_SERVER['DOCUMENT_ROOT'] . "/Backend/CONTROLLER/SeguroDAO.php";
+    require_once $_SERVER['DOCUMENT_ROOT'] . "/Backend/MODEL/seguros.php";
     $con = Conexao::Getconexao();
     
+   
 ?>
-
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -41,108 +42,49 @@
             </div>
             <div class="col-xl-11 " id="area__seguros">
                  <p>Seguros</p>
-                <table class="Tabelaseguros">
+                 
+                <table class="table table-striped" id="">
+                <div class="col-md-12">
+                    <thead>
                     <tr Class="Fundo_Tabela">
-                    
-                    <td class="_Editar_"><b>Editar</b></td>
-                    <td class="_Editar_"><b>id</b></td>
-                    <td class="_Pessoa"><b>Pessoa</b></td>
-                    <td class="_placa_veiculo_"><b>Placa Veículo</b></td>
-                    <td class="_vigência"><b>Vigência</b></td>
-                    <td class="_apólice_"><b>Apólice</b></td>
-                    <td class="_proposta_"><b>Proposta</b></td> 
-                    <td class="_ativo_"><b>Ativo</b></td>
-                    
+                    <th><b>Editar</b></th>
+                    <th><b>id</b></th>
+                    <th><b>Pessoa</b></th>
+                    <th><b>cpf</b></th>
+                    <th><b>Placa Veículo</b></th>
+                    <th><b>Vigência</b></th>
+                    <th><b>Apólice</b></th>
+                    <th><b>Proposta</b></th> 
+                    <th><b>Ativo</b></th>
+                    </thead>
                 </tr>
-                <tr>
-                    
-                    <td class="_Editar_">Editar</td>
-                    <td class="_Editar_">id</td>
-                    <td class="_Pessoa">Pessoa</td>
-                    <td class="_placa_veiculo_">Placa Veículo</td>
-                    <td class="_vigência">Vigência</td>
-                    <td class="_apólice_">Apólice</td>
-                    <td class="_proposta_">Proposta</td> 
-                    <td class="_ativo_">Ativo</td>
-                </tr>
-                <tr Class="Fundo_Tabela">
-                    
-                    <td class="_Editar_">Editar</td>
-                    <td class="_Editar_">id</td>
-                    <td class="_Pessoa">Pessoa</td>
-                    <td class="_placa_veiculo_">Placa Veículo</td>
-                    <td class="_vigência">Vigência</td>
-                    <td class="_apólice_">Apólice</td>
-                    <td class="_proposta_">Proposta</td> 
-                    <td class="_ativo_">Ativo</td>
-                </tr>
-                <tr>
-                    
-                    <td class="_Editar_">Editar</td>
-                    <td class="_Editar_">id</td>
-                    <td class="_Pessoa">Pessoa</td>
-                    <td class="_placa_veiculo_">Placa Veículo</td>
-                    <td class="_vigência">Vigência</td>
-                    <td class="_apólice_">Apólice</td>
-                    <td class="_proposta_">Proposta</td> 
-                    <td class="_ativo_">Ativo</td>
-                </tr>
-                <tr Class="Fundo_Tabela">
-                    
-                    <td class="_Editar_">Editar</td>
-                    <td class="_Editar_">id</td>
-                    <td class="_Pessoa">Pessoa</td>
-                    <td class="_placa_veiculo_">Placa Veículo</td>
-                    <td class="_vigência">Vigência</td>
-                    <td class="_apólice_">Apólice</td>
-                    <td class="_proposta_">Proposta</td> 
-                    <td class="_ativo_">Ativo</td>
-                </tr>
-                <tr>
-                    
-                    <td class="_Editar_">Editar</td>
-                    <td class="_Editar_">id</td>
-                    <td class="_Pessoa">Pessoa</td>
-                    <td class="_placa_veiculo_">Placa Veículo</td>
-                    <td class="_vigência">Vigência</td>
-                    <td class="_apólice_">Apólice</td>
-                    <td class="_proposta_">Proposta</td> 
-                    <td class="_ativo_">Ativo</td>
-                </tr>
-                <tr Class="Fundo_Tabela">
-                    
-                    <td class="_Editar_">Editar</td>
-                    <td class="_Editar_">id</td>
-                    <td class="_Pessoa">Pessoa</td>
-                    <td class="_placa_veiculo_">Placa Veículo</td>
-                    <td class="_vigência">Vigência</td>
-                    <td class="_apólice_">Apólice</td>
-                    <td class="_proposta_">Proposta</td> 
-                    <td class="_ativo_">Ativo</td>
-                </tr>
-                <tr>
-                    
-                    <td class="_Editar_">Editar</td>
-                    <td class="_Editar_">id</td>
-                    <td class="_Pessoa">Pessoa</td>
-                    <td class="_placa_veiculo_">Placa Veículo</td>
-                    <td class="_vigência">Vigência</td>
-                    <td class="_apólice_">Apólice</td>
-                    <td class="_proposta_">Proposta</td> 
-                    <td class="_ativo_">Ativo</td>
-                </tr>
-                <tr Class="Fundo_Tabela">
-                    
-                    <td class="_Editar_">Editar</td>
-                    <td class="_Editar_">id</td>
-                    <td class="_Pessoa">Pessoa</td>
-                    <td class="_placa_veiculo_">Placa Veículo</td>
-                    <td class="_vigência">Vigência</td>
-                    <td class="_apólice_">Apólice</td>
-                    <td class="_proposta_">Proposta</td> 
-                    <td class="_ativo_">Ativo</td>
-                </tr>
+                </div>
                
+                <div class="col-md-12">
+                    <tbody>
+                        <?php
+                            $seguros = SeguroDAO::buscarTodos();
+                            foreach($seguros as $seguro){
+                                echo "
+                                    <tr>
+                                        <td><button type='button' class='btn btn-primary' data-toggle='modal'>Atualizar</button></td>
+                                        <td>$seguro->id</td>
+                                        <td>$seguro->nome</td>
+                                        <td>$seguro->cpf</td>
+                                        <td>$seguro->placaveiculo</td>
+                                        <td>$seguro->vigencia</td>
+                                        <td>$seguro->apolice</td>
+                                        <td>$seguro->proposta</td>
+                                        <td>$seguro->ativo</td>
+                                    </tr>
+                                ";
+                            }
+                    
+                        
+                        
+                        ?>
+                    </tbody>
+                </div>
                 </talbe>
             </div>
         </div>
