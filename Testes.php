@@ -32,17 +32,17 @@ echo "TESTANDO A INSERÇÃO DE UM OBJETO  NO BANCO<br>";
 
 $dadosSeguro = [
         "",
-        "zé",
-        "27335232333",
-        "PLN2032",
+        "vi",
+        "6423672624",
+        "ASN2032",
         "193131",
         "1313131",
         "2026-02-13 00:00:00",
         "0",
 ];
 
-    //$novoSeguro = new Seguros($dadosSeguro);
-    //SeguroDAO::inserir($novoSeguro);
+    $novoSeguro = new Seguros($dadosSeguro);
+    SeguroDAO::inserir($novoSeguro);
 
 
     echo "TESTANDO A ATUALIZAÇAO DE UM OBJETO  NO BANCO<br>";
@@ -58,15 +58,15 @@ $dadosSeguro = [
             "0",
     ];
 
-    $seguro = new Seguros($dadosSeguro);
-    SeguroDAO::atualizar($seguro);
+    //$seguro = new Seguros($dadosSeguro);
+    //SeguroDAO::atualizar($seguro);
 
     echo "TESTANDO A EXCLUSAO DE UM OBJETO  NO BANCO<br>";
     SeguroDAO::excluir(4);
 
 
     echo "TESTANDO A BUSCA DE UM OBJETO NO BANCO<br>";
-    $seguro = SeguroDAO::buscar(1);
+    $seguro = SeguroDAO::buscar(3);
     echo "
         ID: $seguro->id <br>
         Nome: $seguro->nome <br>

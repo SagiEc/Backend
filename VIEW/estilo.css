@@ -1,0 +1,25 @@
+
+#area__seguros{
+ padding-left: 50px;
+
+    text-align: left;
+}
+header{
+background-color: rgb(13, 10, 59);
+box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.795);
+color: white;
+}
+h1{
+    text-align:right; 
+   
+    font-style: italic;
+}
+
+#sidebar{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.modal-content{
+    width: 650px;
+}

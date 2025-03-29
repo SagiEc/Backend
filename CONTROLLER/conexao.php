@@ -15,7 +15,7 @@
             if(!isset(self::$conexao)){
                 try{
                     self::$conexao = new PDO($stringConexao, $usuario, $senha);
-                   echo "<script> alert('Conectado com sucesso!') </script>";
+                  // echo "<script> alert('Conectado com sucesso!') </script>";
                 } catch(PDOException $e){
                     $erro = $e->getCode();
                     if($erro == 1044){
